@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Agent runtime/cache
+.omx/
+.codebase-memory/
+
+# Local knowledge tooling
+graphify-out/
+.venv-graphify/
+
+# Community release safety (shared kit policy)
+node_modules/
+dist/
+.next/
+coverage/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+.omx/
+.codebase-memory/
+.venv-graphify/
+graphify-out/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+*.log
+*.pem
+*.key
+.DS_Store
+.claude/settings.local.json

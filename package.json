@@ -1,0 +1,58 @@
+{
+  "name": "frontend-template-webview-mbank",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "verify": "pnpm lint && pnpm test:theme && pnpm test:boundaries && pnpm test && pnpm typecheck && pnpm build && node .ai/context.mjs --check",
+    "test:theme": "node --test scripts/theme-contract.test.mjs",
+    "ui:check": "pnpm dlx shadcn@4.21.1 add --dry-run",
+    "ui:add": "pnpm dlx shadcn@4.21.1 add --yes",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:browser": "playwright test",
+    "test:boundaries": "node --test scripts/architecture.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.2.6",
+    "lucide-react": "^1.33.0",
+    "next-themes": "^0.4.6",
+    "radix-ui": "^1.6.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sonner": "^2.0.8",
+    "tw-animate-css": "^1.4.0",
+    "@tanstack/react-query": "5.104.1",
+    "@tanstack/react-router": "1.170.41",
+    "axios": "1.20.0",
+    "react-hook-form": "7.89.0",
+    "zod": "4.6.6",
+    "@hookform/resolvers": "5.9.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "8.2.4",
+    "vitest": "4.1.12",
+    "@playwright/test": "1.63.0",
+    "@testing-library/react": "16.3.2",
+    "happy-dom": "21.0.4"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "engines": {
+    "node": "^22.18.0 || >=24.0.0"
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "skills": [
+    "api-contract-check",
+    "async-state-safety",
+    "brainstorming",
+    "browser-qa",
+    "change-impact",
+    "dependency-update-audit",
+    "design-system-steward",
+    "executing-plans",
+    "feature-architecture",
+    "file-upload-safety",
+    "find-skills",
+    "form-checklist",
+    "frontend-a11y-check",
+    "frontend-agent",
+    "frontend-design",
+    "frontend-error-ux",
+    "graphify",
+    "i18n-audit",
+    "mbank-bridge-contract",
+    "mbank-session-payments",
+    "parallel-work",
+    "performance-audit",
+    "project-documentation-wiki",
+    "project-kickoff",
+    "react-19-patterns",
+    "receiving-code-review",
+    "refactor-safely",
+    "release-readiness",
+    "requesting-code-review",
+    "review-changes",
+    "security-review",
+    "systematic-debugging",
+    "task-handoff",
+    "test-driven-development",
+    "test-strategy",
+    "ui-ux-pro-max",
+    "url-state",
+    "using-git-worktrees",
+    "verification-before-completion",
+    "verification-quality",
+    "visual-regression",
+    "webview-device-qa",
+    "webview-layout-keyboard",
+    "webview-native-contract",
+    "webview-navigation-lifecycle",
+    "writing-plans"
+  ],
+  "tasks": {
+    "question": {
+      "mode": "read",
+      "skills": []
+    },
+    "docs": {
+      "mode": "change",
+      "skills": [
+        "project-documentation-wiki"
+      ]
+    },
+    "design": {
+      "mode": "read",
+      "skills": [
+        "project-kickoff",
+        "brainstorming"
+      ]
+    },
+    "feature": {
+      "mode": "change",
+      "skills": [
+        "feature-architecture",
+        "change-impact",
+        "test-driven-development"
+      ]
+    },
+    "bug": {
+      "mode": "change",
+      "skills": [
+        "systematic-debugging",
+        "change-impact",
+        "test-driven-development"
+      ]
+    },
+    "refactor": {
+      "mode": "change",
+      "skills": [
+        "refactor-safely",
+        "change-impact"
+      ]
+    },
+    "ui": {
+      "mode": "change",
+      "skills": [
+        "frontend-agent",
+        "frontend-design",
+        "browser-qa",
+        "react-19-patterns"
+      ]
+    },
+    "review": {
+      "mode": "read",
+      "skills": [
+        "review-changes",
+        "verification-quality"
+      ]
+    },
+    "dependency": {
+      "mode": "change",
+      "skills": [
+        "change-impact",
+        "verification-quality",
+        "dependency-update-audit"
+      ]
+    },
+    "release": {
+      "mode": "read",
+      "skills": [
+        "release-readiness",
+        "verification-quality"
+      ]
+    },
+    "resume": {
+      "mode": "read",
+      "skills": [
+        "task-handoff"
+      ]
+    },
+    "parallel": {
+      "mode": "read",
+      "skills": [
+        "parallel-work",
+        "using-git-worktrees"
+      ]
+    },
+    "api-contract-check": {
+      "mode": "read",
+      "skills": [
+        "api-contract-check"
+      ]
+    },
+    "form-checklist": {
+      "mode": "read",
+      "skills": [
+        "form-checklist"
+      ]
+    },
+    "frontend-a11y-check": {
+      "mode": "read",
+      "skills": [
+        "frontend-a11y-check"
+      ]
+    },
+    "dependency-update-audit": {
+      "mode": "read",
+      "skills": [
+        "dependency-update-audit"
+      ]
+    },
+    "async-state-safety": {
+      "mode": "read",
+      "skills": [
+        "async-state-safety"
+      ]
+    },
+    "security-review": {
+      "mode": "read",
+      "skills": [
+        "security-review"
+      ]
+    },
+    "i18n-audit": {
+      "mode": "read",
+      "skills": [
+        "i18n-audit"
+      ]
+    },
+    "performance-audit": {
+      "mode": "read",
+      "skills": [
+        "performance-audit"
+      ]
+    },
+    "test-strategy": {
+      "mode": "read",
+      "skills": [
+        "test-strategy"
+      ]
+    },
+    "visual-regression": {
+      "mode": "read",
+      "skills": [
+        "visual-regression"
+      ]
+    },
+    "file-upload-safety": {
+      "mode": "read",
+      "skills": [
+        "file-upload-safety"
+      ]
+    },
+    "url-state": {
+      "mode": "read",
+      "skills": [
+        "url-state"
+      ]
+    }
+  },
+  "risks": {
+    "shared-ui": {
+      "skills": [
+        "change-impact",
+        "design-system-steward",
+        "browser-qa"
+      ],
+      "checks": [
+        "Consumer regression; controlled props; focus/keyboard; portals/scroll lock; desktop/mobile and error/empty states."
+      ]
+    },
+    "routing": {
+      "skills": [
+        "change-impact",
+        "browser-qa"
+      ],
+      "checks": [
+        "Deep link/reload, back/forward, guards, redirects, old URLs, query/hash and menu navigation."
+      ]
+    },
+    "api": {
+      "skills": [
+        "change-impact",
+        "frontend-error-ux",
+        "api-contract-check"
+      ],
+      "checks": [
+        "Request/response/error contract; nullable data; pagination; cache invalidation; cancellation and retry idempotency."
+      ]
+    },
+    "auth": {
+      "skills": [
+        "change-impact",
+        "security-review"
+      ],
+      "checks": [
+        "Server authorization; cross-user/tenant denial; expired session/logout; no stale private cache or client secret exposure."
+      ]
+    },
+    "database": {
+      "skills": [
+        "change-impact"
+      ],
+      "checks": [
+        "Confirm database ownership before changes; migration/backfill/rollback, transactions, locking/indexes and isolated test data; no production mutation without authorization."
+      ]
+    },
+    "async": {
+      "skills": [
+        "change-impact",
+        "async-state-safety"
+      ],
+      "checks": [
+        "Unmount cleanup, abort/races, stale closure, duplicate events, StrictMode and idempotent mutation behavior."
+      ]
+    },
+    "i18n": {
+      "skills": [
+        "change-impact",
+        "browser-qa",
+        "i18n-audit"
+      ],
+      "checks": [
+        "Existing locale keys, long labels, pluralization, locale/timezone/number formatting and fallback language."
+      ]
+    },
+    "a11y": {
+      "skills": [
+        "browser-qa",
+        "design-system-steward",
+        "frontend-a11y-check"
+      ],
+      "checks": [
+        "Keyboard, focus restoration, accessible names/roles, disabled states and semantic contrast tokens."
+      ]
+    },
+    "performance": {
+      "skills": [
+        "change-impact",
+        "performance-audit"
+      ],
+      "checks": [
+        "Baseline vs changed render/request counts, large lists, bundle/client JS; no speculative memoization."
+      ]
+    },
+    "supply-chain": {
+      "skills": [
+        "change-impact",
+        "release-readiness",
+        "dependency-update-audit"
+      ],
+      "checks": [
+        "Dependency source/version/license, lockfile, lifecycle scripts, runtime/build/CI compatibility; no blind latest or global installs."
+      ]
+    },
+    "external": {
+      "skills": [
+        "change-impact",
+        "release-readiness"
+      ],
+      "checks": [
+        "Identify destination and explicit authorization for uploads, billing, notifications, production data, publishing or deployment; tool access alone grants no permission."
+      ]
+    },
+    "forms": {
+      "skills": [
+        "form-checklist"
+      ],
+      "checks": [
+        "Apply form-checklist; report behavioral evidence and unverified cases."
+      ]
+    },
+    "testing": {
+      "skills": [
+        "test-strategy"
+      ],
+      "checks": [
+        "Apply test-strategy; report behavioral evidence and unverified cases."
+      ]
+    },
+    "visual": {
+      "skills": [
+        "visual-regression"
+      ],
+      "checks": [
+        "Apply visual-regression; report behavioral evidence and unverified cases."
+      ]
+    },
+    "uploads": {
+      "skills": [
+        "file-upload-safety"
+      ],
+      "checks": [
+        "Apply file-upload-safety; report behavioral evidence and unverified cases."
+      ]
+    },
+    "url-state": {
+      "skills": [
+        "url-state"
+      ],
+      "checks": [
+        "Apply url-state; report behavioral evidence and unverified cases."
+      ]
+    },
+    "native": {
+      "skills": [
+        "webview-native-contract"
+      ],
+      "checks": [
+        "Verify real native protocol and owner, unavailable behavior, payload/version errors, bounded waiting, no replay and redaction."
+      ]
+    },
+    "keyboard": {
+      "skills": [
+        "webview-layout-keyboard"
+      ],
+      "checks": [
+        "One inset/keyboard owner; viewport scale/resize/scroll cleanup; input in overlay; native device checklist."
+      ]
+    },
+    "webview-lifecycle": {
+      "skills": [
+        "webview-navigation-lifecycle"
+      ],
+      "checks": [
+        "Direct links/back priority, session generation, cancellation, reopen/resume without invented events."
+      ]
+    },
+    "native-qa": {
+      "skills": [
+        "webview-device-qa"
+      ],
+      "checks": [
+        "Separate unit/browser evidence from actual iOS/Android host engine proof."
+      ]
+    },
+    "mbank": {
+      "skills": [
+        "mbank-bridge-contract",
+        "mbank-session-payments"
+      ],
+      "checks": [
+        "Bank partner contract, guest/no-token, launch scrub before router, single-shot auth, payment unknown outcome and explicit native/device gaps."
+      ]
+    }
+  }
+}
